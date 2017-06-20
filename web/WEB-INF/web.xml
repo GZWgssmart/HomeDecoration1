@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>BeautHome</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>hy.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <filter>
+    <filter-name>EncodingFilter</filter-name>
+    <filter-class>com.gs.filter.EncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>EncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <filter>
+    <filter-name>ManageFilter</filter-name>
+    <filter-class>com.gs.filter.ManageFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>ManageFilter</filter-name>
+    <url-pattern>/classification/*</url-pattern>
+  </filter-mapping>
+  
+  <servlet>
+  	<servlet-name>BHCompany</servlet-name>
+  	<servlet-class>com.gs.controller.BHCompanyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BHCompany</servlet-name>
+  	<url-pattern>/BHcompany/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Company</servlet-name>
+  	<servlet-class>com.gs.controller.CompanyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Company</servlet-name>
+  	<url-pattern>/company/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Company_case</servlet-name>
+  	<servlet-class>com.gs.controller.Company_caseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Company_case</servlet-name>
+  	<url-pattern>/company_case/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Supply</servlet-name>
+  	<servlet-class>com.gs.controller.SupplyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Supply</servlet-name>
+  	<url-pattern>/supply/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>DesignerServlet</servlet-name>
+  	<servlet-class>com.gs.controller.DesignerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DesignerServlet</servlet-name>
+  	<url-pattern>/des/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>AdminServlet</servlet-name>
+  	<servlet-class>com.gs.controller.AdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AdminServlet</servlet-name>
+  	<url-pattern>/adm/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>CustomerServlet</servlet-name>
+  	<servlet-class>com.gs.controller.CustomerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CustomerServlet</servlet-name>
+  	<url-pattern>/cus/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ProductServlet</servlet-name>
+  	<servlet-class>com.gs.controller.ProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ProductServlet</servlet-name>
+  	<url-pattern>/pro/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>SupplyActiveServlet</servlet-name>
+  	<servlet-class>com.gs.controller.SupplyActiveServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SupplyActiveServlet</servlet-name>
+  	<url-pattern>/supAct/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>AdminManageServlet</servlet-name>
+  	<servlet-class>com.gs.controller.AdminManageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AdminManageServlet</servlet-name>
+  	<url-pattern>/admMan/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>AdminControlServlet</servlet-name>
+  	<servlet-class>com.gs.controller.AdminControlServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AdminControlServlet</servlet-name>
+  	<url-pattern>/admCon/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>BHDesignerServlet</servlet-name>
+  	<servlet-class>com.gs.controller.BHDesignerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BHDesignerServlet</servlet-name>
+  	<url-pattern>/BHdes/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>BHSupplyServlet</servlet-name>
+  	<servlet-class>com.gs.controller.BHSupplyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BHSupplyServlet</servlet-name>
+  	<url-pattern>/BHsup/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>CustomerManageServlet</servlet-name>
+  	<servlet-class>com.gs.controller.CustomerManageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CustomerManageServlet</servlet-name>
+  	<url-pattern>/cusMan/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>BHIndexServlet</servlet-name>
+  	<servlet-class>com.gs.controller.BHIndexServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BHIndexServlet</servlet-name>
+  	<url-pattern>/index/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>AllSearchServlet</servlet-name>
+  	<servlet-class>com.gs.controller.AllSearchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AllSearchServlet</servlet-name>
+  	<url-pattern>/search/*</url-pattern>
+  </servlet-mapping>
+</web-app>

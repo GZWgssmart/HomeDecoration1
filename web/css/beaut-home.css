@@ -1,0 +1,11 @@
+#error {
+	color:red;
+	font-size:12px;
+}
+.navbar-toggle {
+	background-color:rgba(0, 233, 253, 0.54);
+}
+
+.am-form-horizontal .am-form-group .am-form-label {
+    text-align: left;
+}
