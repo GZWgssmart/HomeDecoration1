@@ -14,7 +14,7 @@ function company_case_add(){
 	    $("#form").on('submit', function() {
 	        $("#form").ajaxSubmit({
 	            type: 'post', // 提交方式 get/post
-	            url: '/BeautHome/company_case/add_comp', // 需要提交的 url
+	            url: contextPath+'/company_case/add_comp', // 需要提交的 url
 	            dataType : 'json',
 	            data: $("#form").serialize(),
 	            success: function(data) { // data 保存提交后返回的数据，一般为 json 数据
@@ -49,7 +49,7 @@ function company_case_edit(){
 	    $("#form").on('submit', function() {
 	        $("#form").ajaxSubmit({
 	            type: 'post', // 提交方式 get/post
-	            url: '/BeautHome/company_case/edit', // 需要提交的 url
+	            url: contextPath+'/company_case/edit', // 需要提交的 url
 	            dataType : 'json',
 	            data: $("#form").serialize(),
 	            success: function(data) { // data 保存提交后返回的数据，一般为 json 数据
@@ -83,7 +83,7 @@ function company_case_add_active(){
 	    $("#form").on('submit', function() {
 	        $("#form").ajaxSubmit({
 	            type: 'post', // 提交方式 get/post
-	            url: '/BeautHome/company_case/add_active', // 需要提交的 url
+	            url: contextPath+'/company_case/add_active', // 需要提交的 url
 	            dataType : 'json',
 	            data: $("#form").serialize(),
 	            success: function(data) { // data 保存提交后返回的数据，一般为 json 数据
@@ -117,7 +117,7 @@ function company_case_edit_active(){
 	    $("#form").on('submit', function() {
 	        $("#form").ajaxSubmit({
 	            type: 'post', // 提交方式 get/post
-	            url: '/BeautHome/company_case/editactive', // 需要提交的 url
+	            url: contextPath+'/company_case/editactive', // 需要提交的 url
 	            dataType : 'json',
 	            data: $("#form").serialize(),
 	            success: function(data) { // data 保存提交后返回的数据，一般为 json 数据

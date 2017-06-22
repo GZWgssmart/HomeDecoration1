@@ -33,7 +33,7 @@ function add_pro() {
 		$("#form").on('click', function() {
 	        $("#form").ajaxSubmit({
 	            type: 'post', // 提交方式 get/post
-	            url: '/BeautHome/pro/add', // 需要提交的 url
+	            url: contextPath+'/pro/add', // 需要提交的 url
 	            dataType : 'json',
 	            data:$("#form").serialize(),
 	            success: function(data) { // data 保存提交后返回的数据，一般为 json 数据
@@ -85,7 +85,7 @@ function update_pro() {
 		$("#form").on('click', function() {
 	        $("#form").ajaxSubmit({
 	            type: 'post', // 提交方式 get/post
-	            url: '/BeautHome/pro/update', // 需要提交的 url
+	            url: contextPath+'/pro/update', // 需要提交的 url
 	            dataType : 'json',
 	            data:$("#form").serialize(),
 	            success: function(data) { // data 保存提交后返回的数据，一般为 json 数据

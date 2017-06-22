@@ -25,7 +25,7 @@ function designer_case_add(){
 	$("#form").on('click', function() {
 	        $("#form").ajaxSubmit({
 	            type: 'post', // 提交方式 get/post
-	            url: '/BeautHome/des/add_des', // 需要提交的 url
+	            url: contextPath+'/des/add_des', // 需要提交的 url
 	            dataType : 'json',
 	            data: $("#form").serialize(),
 	            success: function(data) { // data 保存提交后返回的数据，一般为 json 数据
@@ -69,7 +69,7 @@ function designer_case_edit(){
 	$("#form").on('click', function() {
         $("#form").ajaxSubmit({
             type: 'post', // 提交方式 get/post
-            url: '/BeautHome/des/edit', // 需要提交的 url
+            url: contextPath+'/des/edit', // 需要提交的 url
             dataType : 'json',
             data: $("#form").serialize(),
             success: function(data) { // data 保存提交后返回的数据，一般为 json 数据
